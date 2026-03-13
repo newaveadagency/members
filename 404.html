@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      var base = '/dd-sales-academy';
+      window.location.replace(
+        window.location.origin + base + '/?redirect=' + 
+        encodeURIComponent(path.slice(base.length) + search + hash)
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
